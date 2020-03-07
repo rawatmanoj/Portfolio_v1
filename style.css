@@ -102,8 +102,6 @@ li,a {
     transform: translateX(0%);
 }
 
-
-
 @keyframes navLinkFade{
     from{
     opacity: 0;
@@ -200,7 +198,7 @@ align-items: center;
     
 
   .heading1{ 
-    font-size: 20px;
+   
     animation: fadeInAnimation ease  ;
      /* animation-delay: 1s;  */
      animation-delay: 1s;
@@ -313,7 +311,6 @@ align-items: center;
       
               transform: translateY(300%);
     }
-
     
     100%{
       
@@ -388,4 +385,3 @@ align-items: center;
          
      }
 }
- 
