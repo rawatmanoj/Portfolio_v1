@@ -403,8 +403,11 @@ align-items: center;
     }
    
         .item{
+            flex:1 1 200px;
             margin: 10px;
-            background-image: url('./img/proj1.png');
+            transition: transform 0.3s ease-out;
+            margin: 10px;
+            background: url('./img/proj1.png');
 
             height: 160px;
             width: 340px;
@@ -412,7 +415,10 @@ align-items: center;
             background-size: 100% 100%;
             border-radius: 4px;
             box-shadow: 0px 2px 3px 4px rgb(216, 215, 215);    
-
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
            
          }
          
@@ -434,6 +440,15 @@ align-items: center;
 
              
          }
+         .item4{
+            margin: 10px;
+            background: url('./img/proj4.png');
+            background-repeat:center center no-repeat;
+            background-size: 100% 100%;
+            border-radius: 4px;
+
+             
+         }
     
     .main{
       
@@ -447,18 +462,47 @@ align-items: center;
      /* background-color: black; */
     }
     
-.item{
-    flex:1 1 200px;
-      margin: 10px;
-      transition: transform 0.3s ease-out;
 
-      
-}
-.item:hover{
+
+i {
+    font-family: fontawesome !important;
+    }
+
+.item i{
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
    
-    transform: scale(1.07);
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('./img/proj1.png');
 }
+
+.link{
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+/* .item i:hover{
+    cursor: pointer;
+} */
+
+
+
+.item:hover{
+    
+    transform: scale(1.07);
+    background-image:  linear-gradient(rgba(2, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('./img/proj1.png');
+    /* opacity: 1; */
+}
+
+.item:hover i{
+    opacity: 1;
+}
+
+.item:hover img{
+    opacity: 1;
+}
+
 .item2:hover{
    
     transform: scale(1.07);
@@ -469,15 +513,13 @@ align-items: center;
     transform: scale(1.07);
     background-image:  linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('./img/proj3.png');
 }
-
-/* header{
+.item4:hover{
    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(./img/hero.jpg);
-    height:100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-} */
+    transform: scale(1.07);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('./img/proj4.png');
+}
+
+
  
 
 /* media queries */
