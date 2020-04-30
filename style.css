@@ -464,47 +464,118 @@ i {
 
 /* fourth Page */
 
-.fourthpage {
-  
-  min-height: 100vh;
-  width: 100%;
+.section-skills {
+  padding: 10vh 0;
+  /* background-image: linear-gradient(to bottom right, rgba(202, 232, 213, 0.8), rgba(32, 64, 81, 0.8)), url(./images/everyone-can-code.jpg); */
+  background-position: top;
+  background-size: cover;
+  transform: skewY(-5deg);
+}
+.section-skills > * {
+  transform: skewY(5deg);
 }
 
-.skills-header {
-  font-family: "Lato", sans-serif;
-
-}
-
-.skills-header h1{
-  margin-left: auto;
-  margin-right: auto;
-  width: 35%;
-}
-
-.skills{
+.skills-container {
+  max-width: 900px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  
   justify-content: center;
-  align-items: center;
-    
+}
+.skills-container .skill-box {
+  padding: 20px;
+  margin: 20px;
+  flex: 150px 0 0;
+  background-color: rgba(238, 238, 238, 0.8);
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.skills-container .skill-box .skill-logo {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  min-height: 70px;
+}
+.skills-container .skill-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 400px;
+}
 
+.contact-container {
+  width: 80px;
+  height: 80px;
+}
 
+.get-touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif;
+  color: black;
+}
 
+.get-touch p {
+  margin-top: 10px;
+}
 
+.email-container {
+  font-size: x-large;
+  margin-top: 20px;
+  padding: 8px;
+  border: 2px solid black;
+}
 
+.email-container:hover {
+  color: black;
+}
 
+.section-footer {
+  width: 100%;
+  min-height: 200px;
+  background: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background: #333;
 
+  font-size: 30px;
+}
 
-
-
-
-
-
+.footer-icons {
+  color: white;
+}
 
 /* media queries */
 @media screen and (max-width: 1000px) {
